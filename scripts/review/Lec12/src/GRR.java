@@ -1,10 +1,6 @@
 import java.io.*;
 
-class BRR{
-    /**
-     * @param args
-     * @throws IOException
-     */
+class GRR{
     public static void main(String[] args) throws IOException {
         char c;
 
