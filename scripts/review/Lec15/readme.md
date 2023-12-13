@@ -51,6 +51,11 @@ interface Mynumber{ //함수형 인터페이스
 ----
 ## 메서드 참조
 - 메서드를 실행하지 않고 참조 변수로 넘겨줌
-- static 메서드 : ClassName::methodName
+- static 메서드 : ClassName::methodName줌
 - 오브젝트 메서드 : objName::methodName
 - 인터페이스 이용하여 넘겨줌, 실행하지 않고 참조 변수로 넘겨줌
+- 제네릭 메서드의 경우 메소드 이름 앞에 제네릭 변수 넣어
+----
+## 생성자 참조
+- 메서드 참조와 유사한 방식
+- 제네릭 생성자도 참조할 수 있음
