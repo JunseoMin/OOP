@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 @Component
-@Primary
+@Primary  // 디폴트 값 설정
 public class CommentPushNotificationProxy
         implements CommentNotificationProxy {
 

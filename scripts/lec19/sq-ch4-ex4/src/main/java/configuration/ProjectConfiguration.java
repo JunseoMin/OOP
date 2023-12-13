@@ -12,7 +12,7 @@ import services.CommentService;
 @Configuration
 public class ProjectConfiguration {
 
-  @Bean
+  @Bean // 종속성 bean으로 설정해
   public CommentRepository commentRepository() {
     return new DBCommentRepository();
   }

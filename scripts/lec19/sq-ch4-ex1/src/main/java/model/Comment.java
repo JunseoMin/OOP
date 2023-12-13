@@ -1,6 +1,6 @@
 package model;
 
-public class Comment {
+public class Comment {  //POJO 의존성이 존재하지 않는 오브젝트
 
   private String author;
   private String text;
