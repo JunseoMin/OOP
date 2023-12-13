@@ -10,7 +10,7 @@ import services.CommentService;
 public class ProjectConfig {
 
   @Bean
-  @Scope(BeanDefinition.SCOPE_PROTOTYPE)
+  @Scope(BeanDefinition.SCOPE_PROTOTYPE)  //@bean이용 방법
   public CommentService commentService() {
     return new CommentService();
   }

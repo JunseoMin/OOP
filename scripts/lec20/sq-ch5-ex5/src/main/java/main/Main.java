@@ -14,6 +14,6 @@ public class Main {
 
     boolean b1 = cs1 == cs2;
 
-    System.out.println(b1);
+    System.out.println(b1); // false
   }
 }

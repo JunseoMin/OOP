@@ -15,6 +15,6 @@ public class Main {
 
     boolean b = s1.getCommentRepository() == s2.getCommentRepository();
 
-    System.out.println(b);
+    System.out.println(b);  //TRUE
   }
 }
