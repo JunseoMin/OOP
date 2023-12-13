@@ -2,8 +2,8 @@ import java.net.*;
 import java.io.*;
 
 public class EchoServer {
-    public static void main(String[] args) {
-        ServerSocket server = new ServerSocket(11);
+    public static void main(String[] args) throws Exception {
+        ServerSocket server = new ServerSocket(9999);
         server.setReuseAddress(true);
 
         Socket connection = server.accept();    // accept가 되면 클라이언트 소켓 생성
@@ -12,14 +12,14 @@ public class EchoServer {
         String msg = null;
 
         while ((msg = in.readLine())!= null){   //readLine은 계행 문자는 제외함, 끝에 도달하면 null 출력
-            if (msg.contains("end")) {
+            if (msg.contains("end"))    // 여기 중괄호 안쳐져 있음 ㅋㅋ
                 break;
-                System.out.println("Received: " + msg);
-            }
-            in.close();
-            connection.close();
-            server.close();
+            System.out.println("Received: " + msg);
+
         }
+        in.close();
+        connection.close();
+        server.close();
 
     }
 }
