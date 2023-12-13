@@ -13,9 +13,9 @@ public class Main {
         Parrot x = new Parrot();
         x.setName("Kiki");
 
-        Supplier<Parrot> parrotSupplier = () -> x;
+        Supplier<Parrot> parrotSupplier = () -> x;  // return x : x=> kiki 라는 parrot
 
-        context.registerBean("parrot1", Parrot.class, parrotSupplier);
+        context.registerBean("parrot1", Parrot.class, parrotSupplier);  //동적으로 추가하는 방법 context에 parrot1 kiki 추가
 
 //        context.registerBean("parrot1",
 //                Parrot.class,

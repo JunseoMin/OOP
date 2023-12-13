@@ -81,3 +81,9 @@ ex) https://cs.kw.ac.kr:501/main/main.cpp
 - UDP로 전송계층 프로토콜을 사용하기 위해서 생성하는 소켓 클래스
 ## DatagramPacket
 - UDP클라이언트/ 서버 간 주고받는 패킷을 담는 클래스
+----
+## HTTP 패키지
+- java.net.http
+- JDK 11부터 추가됨
+- 다양한 편의성 제공
+- HttpClient, HttpRequest, HttpResponse 의 세가지 핵심요소 존재
