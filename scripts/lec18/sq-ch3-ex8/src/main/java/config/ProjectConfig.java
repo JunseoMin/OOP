@@ -24,7 +24,7 @@ public class ProjectConfig {
   }
 
   @Bean
-  public Person person(Parrot parrot2) {
+  public Person person(Parrot parrot2) {  //빈 메서드의 이름이 일치하는 경우
     Person p = new Person();
     p.setName("Ella");
     p.setParrot(parrot2);

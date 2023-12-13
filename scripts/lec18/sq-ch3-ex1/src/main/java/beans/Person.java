@@ -3,7 +3,7 @@ package beans;
 public class Person {
 
   private String name;
-  private Parrot parrot;
+  private Parrot parrot;  // person object에 parrot 의 객체 주가하여 has - a 관계 구성
 
   public String getName() {
     return name;

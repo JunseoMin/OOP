@@ -16,10 +16,12 @@ public class ProjectConfig {
   }
 
   @Bean
-  public Person person() {
+  public Person person(Parrot parrot) { // 메서드 매개변수를 이용한 방법 IOC가 구현됨
+    // context 에서 injection이 일어남
+    // 직접 메서드에 넣어주는 것보다 바람직한 방법
     Person p = new Person();
     p.setName("Ella");
-    p.setParrot(parrot());
+    p.setParrot(parrot);
     return p;
   }
 }
