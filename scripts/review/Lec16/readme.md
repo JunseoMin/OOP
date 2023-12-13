@@ -53,6 +53,7 @@
     
 **ServerSocket 클래스**
 - 서버 소켓은 클라이언트의 연결을 기다리므로 서버가 사용할 포트 번호만 명시
+- 직접 클라이언트와 통신하지 않음
 
 **Socket 클래스**
 - 연결된 후 IO스트림에 접근하기 위해 getInputStream()과 getOutputStream()이용
