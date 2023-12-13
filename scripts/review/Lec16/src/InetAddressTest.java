@@ -6,7 +6,7 @@ IP 주소를 얻어보는 과정 구현
 
 public class InetAddressTest {
     public static void main(String[] args) throws UnknownHostException{
-        InetAddress Address = InetAddress.getLocalHost();   // get localhost address 127.0.0.1
+        InetAddress Address = InetAddress.getLocalHost();   // get localhost address 127.0.0.1, 팩토리 메서드
         System.out.println(Address);
 
         Address = InetAddress.getByName("www.google.com");  // google ip address by Domain name
